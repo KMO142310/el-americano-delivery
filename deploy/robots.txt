@@ -1,0 +1,8 @@
+# Robots.txt - El Americano
+# https://papasfritas-elamericano.netlify.app
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://papasfritas-elamericano.netlify.app/sitemap.xml
