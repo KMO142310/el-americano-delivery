@@ -4,12 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <!-- SECURITY: Force HTTPS -->
+    <script>
+        if (location.protocol !== 'https:' && location.hostname !== 'localhost' && !location.hostname.includes('127.0.0.1')) {
+            location.replace(`https://${location.hostname}${location.pathname}${location.search}`);
+        }
+    </script>
     <meta name="theme-color" content="#002868">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="description"
         content="Carta digital de El Americano - Papas Supremas y Clásicos. Escanea, elige y pide por WhatsApp.">
     <meta name="robots" content="index, follow">
+    <!-- SECURITY: Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://wa.me; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline';">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
@@ -17,10 +26,10 @@
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://papasfritas-elamericano.netlify.app/menu_qr.html">
+    <meta property="og:url" content="https://el-americano-delivery.vercel.app/menu_qr.html">
     <meta property="og:title" content="Menú Digital | El Americano">
     <meta property="og:description" content="Carta digital de Papas Supremas. Escanea y pide por WhatsApp.">
-    <meta property="og:image" content="https://papasfritas-elamericano.netlify.app/og_preview.png">
+    <meta property="og:image" content="https://el-americano-delivery.vercel.app/og_preview.png">
     <meta property="og:locale" content="es_CL">
 
     <!-- Twitter -->
@@ -424,6 +433,7 @@
         <footer class="footer">
             <p><span class="footer-brand">El Americano</span> · @papasfritas_elamericano</p>
             <p style="margin-top: 8px; opacity: 0.7;">Despacho a domicilio · Retiro en local</p>
+            <p style="margin-top: 12px; font-size: 0.7rem; opacity: 0.4;">v3.1.0 Secura</p>
         </footer>
     </main>
 

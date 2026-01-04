@@ -1,8 +1,8 @@
 # Robots.txt - El Americano
-# https://papasfritas-elamericano.netlify.app
+# https://el-americano-delivery.vercel.app
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://papasfritas-elamericano.netlify.app/sitemap.xml
+Sitemap: https://el-americano-delivery.vercel.app/sitemap.xml
